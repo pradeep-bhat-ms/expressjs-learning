@@ -8,7 +8,7 @@ app.get('/products/:id',(req,res)=>{
 app.get('/data/:username/:course',(req,res)=>{
     res.send(`the username ${req.params.username}<br>  and the id is ${req.params.course}`)
 })
-
+// http://localhost/search/2
 app.get('/search/:id',(req,res)=>{
     res.send({
         id:req.params.id,
